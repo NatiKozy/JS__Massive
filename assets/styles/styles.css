@@ -1,1 +1,50 @@
-/*# sourceMappingURL=styles.css.map */
+* {
+  box-sizing: border-box;
+}
+
+.title {
+  text-transform: uppercase;
+  text-align: center;
+  color: #2410d6;
+}
+
+body {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #d97cf0;
+  font-family: "Roboto";
+}
+
+.block {
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+.name {
+  font-size: 24px;
+  font-weight: 700;
+  color: #2410d6;
+}
+
+.career {
+  font-size: 18px;
+  color: #0b86d8;
+}
+
+.films {
+  color: #3997d6;
+  font-size: 16px;
+}
+
+.small_title {
+  text-transform: uppercase;
+  text-align: center;
+  color: #2410d6;
+}
+
+.small_block {
+  margin-left: 5%;
+  font-size: 22px;
+  color: #065183;
+}/*# sourceMappingURL=styles.css.map */

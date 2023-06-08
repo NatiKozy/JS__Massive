@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+}
+
+@mixin defaul-title{
+    text-transform: uppercase;
+    text-align: center;
+    color: $title-color;
+}
+
+$default-font: 'Roboto';
+$title-color:#2410d6;
+
+.title{
+    @include defaul-title;
+}
+
+body{
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #d97cf0;
+    font-family: $default-font;
+}
+
+.block{
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.name{
+    font-size:24px;
+    font-weight: 700;
+    color: $title-color;
+}
+
+.career{
+    font-size:18px;
+    color:#0b86d8;
+}
+
+.films{
+    color: #3997d6;
+    font-size:16px;
+}
+
+.small_title{
+    @include defaul-title;
+}
+
+.small_block{
+    margin-left: 5%;
+    font-size: 22px;
+    color:#065183;
+}
