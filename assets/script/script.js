@@ -1,3 +1,9 @@
+// 1.Сохраните в переменную массив
+// 2.Вызовите метод forEach у массива
+// 3.В функцию обработчик добавьте код, который относится к работе с DOM
+// 4.В найденные элементы на странице добавьте информацию из каждого элемента массива
+// 5.Создайте новый массив topFilmsList, в нём должны быть лучшие фильмы режиссёров (они хранятся в полях top_rated_film)
+
 const block = document.querySelector(".block");
 const array = [
       {
@@ -43,7 +49,6 @@ const array = [
         top_rated_film: 'Далласский клуб покупателей'
       },
     ];
-    console.log(array);
 
 array.forEach((element) => {
   const nameText = document.createElement("p");
@@ -78,9 +83,14 @@ div.classList.add('small_block');
 div.innerHTML = topFilmsList;
 body.append(div);
 
+//Реализуйте и экспортируйте по умолчанию функцию, которая возвращает длину последнего слова переданной на вход строки. Словом считается любая последовательность, не содержащая пробелов
+const getLastWordLength = (str) => {
+  const words = str.trim().split(' ');
+  const lastWord = words[words.length - 1];
+  return lastWord.length;
+};
 
-// 1.Сохраните в переменную массив
-// 2.Вызовите метод forEach у массива
-// 3.В функцию обработчик добавьте код, который относится к работе с DOM
-// 4.В найденные элементы на странице добавьте информацию из каждого элемента массива
-// 5.Создайте новый массив topFilmsList, в нём должны быть лучшие фильмы режиссёров (они хранятся в полях top_rated_film)
+console.log(getLastWordLength(''));
+console.log(getLastWordLength('man in BlacK'));
+console.log(getLastWordLength('hello, world!  '));
+console.log(getLastWordLength('   I  learn JavaScript  '));
